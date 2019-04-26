@@ -19,9 +19,9 @@ class CouponOrderSchema extends Schema {
         .onDelete('CASCADE')
 
       table
-        .foreign('product_id')
+        .foreign('order_id')
         .references('id')
-        .inTable('products')
+        .inTable('orders')
         .onDelete('CASCADE')
     })
   }
