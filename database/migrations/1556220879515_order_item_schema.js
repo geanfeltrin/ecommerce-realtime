@@ -11,6 +11,7 @@ class OrderItemSchema extends Schema {
       table.integer('quantity').unsigned()
       table.decimal('subtotal', 12, 2)
       table.integer('order_id').unsigned()
+      table.timestamps()
 
       table
         .foreign('product_id')
