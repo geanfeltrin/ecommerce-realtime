@@ -21,8 +21,6 @@ class CouponProductSchema extends Schema {
         .references('id')
         .inTable('products')
         .onDelete('CASCADE')
-        
-      table.timestamps()
     })
   }
 

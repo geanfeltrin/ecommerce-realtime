@@ -23,6 +23,7 @@ class ProductSchema extends Schema {
       table.increments()
       table.integer('image_id').unsigned()
       table.integer('product_id').unsigned()
+      table.timestamps()
       table
         .foreign('image_id')
         .references('id')
@@ -40,6 +41,7 @@ class ProductSchema extends Schema {
       table.increments()
       table.integer('category_id').unsigned()
       table.integer('product_id').unsigned()
+      table.timestamps()
 
       table
         .foreign('category_id')
