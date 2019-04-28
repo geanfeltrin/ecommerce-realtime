@@ -26,14 +26,14 @@ Factory.blueprint('App/Models/User', faker => {
 Factory.blueprint('App/Models/Category', faker => {
   return {
     title: faker.country({ full: true }),
-    description: faker.setence()
+    description: faker.sentence()
   }
 })
 
-Factory.blueprint('App/Models/Category', faker => {
+Factory.blueprint('App/Models/Product', faker => {
   return {
     name: faker.animal(),
-    description: faker.setence(),
+    description: faker.sentence(),
     price: faker.floating({ min: 0, max: 1000, fixed: 2 })
   }
 })
