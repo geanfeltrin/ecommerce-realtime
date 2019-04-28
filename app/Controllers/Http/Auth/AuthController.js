@@ -35,6 +35,7 @@ class AuthController {
     }
     //
   }
+
   async login ({ request, response, auth }) {
     const { email, password } = request.all()
 
@@ -42,6 +43,7 @@ class AuthController {
 
     return response.send({ data })
   }
+
   async refresh ({ request, response, auth }) {
     let refreshToken = request.input('refresh_token')
 
